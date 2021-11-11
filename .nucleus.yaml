@@ -1,0 +1,10 @@
+display-name: Thunder Web Runtime - JavaScript
+team-name: Thunder Web Runtime - JS
+steps:
+    node-build:
+        group: build
+        description: run build with private scope npm token
+        run:
+        command: "yarn build"
+        env:
+        MY_API_KEY: "{{ secrets.NPM_TOKEN }}"
