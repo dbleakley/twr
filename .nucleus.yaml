@@ -5,20 +5,7 @@ steps:
     params:
       registry-url: https://registry.yarnpkg.com
       npmPublicToken: "{{ secrets.NPM_TOKEN }}"
-    env:
-        NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
   npm-configure-for-publish:
     params:
       registry-url: https://registry.npmjs.org
-    env:
-      NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
-  node-install: &node-install
-    group: build
-    type: node-command
-    description: install dependencies
-    node:
-      command: install
-      default: true
-    retry-times: 2
-    env:
-      NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
+      npmPublicToken: "{{ secrets.NPM_TOKEN }}"
