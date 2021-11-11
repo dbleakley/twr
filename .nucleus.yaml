@@ -1,10 +1,13 @@
 display-name: Thunder Web Runtime - JavaScript
 team-name: Thunder Web Runtime - JS
 steps:
-  node-install:
+  node-install: &node-install
     group: build
-    description: install dependencies with private scope npm token
-    run:
-      command: "NPM_TOKEN=\"{{ secrets.NPM_TOKEN }}\" yarn install"
+    type: node-command
+    description: install dependencies
+    node:
+      command: install
+      default: true
+    retry-times: 2
     env:
-        NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
+      NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
