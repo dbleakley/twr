@@ -1,10 +1,13 @@
 display-name: Thunder Web Runtime - JavaScript
 team-name: Thunder Web Runtime - JS
 steps:
-    node-build:
-        group: build
-        description: run build with private scope npm token
-        run:
-            command: "yarn build"
-        env:
-            NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
+  node-install:
+    group: build
+    type: node-type
+    description: install dependencies with private scope npm token
+    node:
+      command: "yarn install"
+      default: true
+    retry-times: 2
+    env:
+        NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
