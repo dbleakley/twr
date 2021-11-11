@@ -5,6 +5,6 @@ steps:
     group: build
     description: install dependencies with private scope npm token
     run:
-      command: "yarn install"
+      command: "echo $NPM_TOKEN; yarn install"
     env:
         NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
