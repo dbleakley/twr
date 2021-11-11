@@ -3,11 +3,8 @@ team-name: Thunder Web Runtime - JS
 steps:
   node-install:
     group: build
-    type: node-type
     description: install dependencies with private scope npm token
-    node:
+    run:
       command: "yarn install"
-      default: true
-    retry-times: 2
     env:
         NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
