@@ -1,6 +1,13 @@
 display-name: Thunder Web Runtime - JavaScript
 team-name: Thunder Web Runtime - JS
 steps:
+  npm-configure:
+    params:
+      registry-url: https://registry.yarnpkg.com
+      _auth: "{{ secrets.NPM_TOKEN }}"
+  npm-configure-for-publish:
+    params:
+      registry-url: https://registry.npmjs.org
   node-install: &node-install
     group: build
     type: node-command
