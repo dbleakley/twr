@@ -5,6 +5,6 @@ steps:
         group: build
         description: run build with private scope npm token
         run:
-        command: "yarn build"
+            command: "yarn build"
         env:
-        MY_API_KEY: "{{ secrets.NPM_TOKEN }}"
+            NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
