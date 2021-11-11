@@ -4,6 +4,7 @@ steps:
   npm-configure:
     params:
       registry-url: https://registry.yarnpkg.com
+      npmPublicToken: "{{ secrets.NPM_TOKEN }}"
     env:
         NPM_TOKEN: "{{ secrets.NPM_TOKEN }}"
   npm-configure-for-publish:
