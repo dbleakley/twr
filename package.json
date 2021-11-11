@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dbleakley/twr/issues"
   },
-  "homepage": "https://github.com/dbleakley/twr#readme"
+  "homepage": "https://github.com/dbleakley/twr#readme",
+  "dependencies": {
+    "@darrell.bleakley/twc": "^0.0.1"
+  }
 }
