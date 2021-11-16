@@ -9,3 +9,8 @@ steps:
     params:
       registry-url: https://registry.npmjs.org
       npmPublicToken: "{{ secrets.NPM_TOKEN }}"
+branches:
+  release:
+    description: npm release only branch
+    pull-request:
+      workflow: release
