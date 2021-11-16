@@ -1,23 +1,23 @@
 {
-  "name": "@darrell.bleakley/twr",
-  "version": "0.0.1",
-  "description": "Thunder Web Runtime",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Testing TWR\"",
-    "build": "echo \"Building TWR\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dbleakley/twr.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dbleakley/twr/issues"
-  },
-  "homepage": "https://github.com/dbleakley/twr#readme",
-  "dependencies": {
-    "@darrell.bleakley/twc": "^0.0.1"
-  }
+    "name": "@darrell.bleakley/twr",
+    "version": "0.1.0",
+    "description": "Thunder Web Runtime",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Testing TWR\"",
+        "build": "echo \"Building TWR\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dbleakley/twr.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dbleakley/twr/issues"
+    },
+    "homepage": "https://github.com/dbleakley/twr#readme",
+    "dependencies": {
+        "@darrell.bleakley/twc": "^0.0.1"
+    }
 }
