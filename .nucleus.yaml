@@ -14,3 +14,7 @@ branches:
     description: npm release only branch
     pull-request:
       workflow: release
+  rel/0.0.x:
+    description: npm release only branch
+    pull-request:
+      workflow: release
