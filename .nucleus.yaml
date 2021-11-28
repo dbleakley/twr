@@ -1,5 +1,10 @@
 display-name: Thunder Web Runtime - JavaScript
 team-name: Thunder Web Runtime - JS
+core-deploy:
+    enabled: true
+    project-modules:
+        ui-twr-modules: ui-twr-modules.version
+    use-core-packager: true
 steps:
   npm-configure:
     params:

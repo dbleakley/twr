@@ -1,6 +1,6 @@
 {
     "name": "@darrell.bleakley/twr",
-    "version": "0.2.2",
+    "version": "0.3.0-canary.1",
     "description": "Thunder Web Runtime",
     "main": "index.js",
     "scripts": {
